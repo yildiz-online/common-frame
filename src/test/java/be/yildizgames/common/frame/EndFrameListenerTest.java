@@ -38,7 +38,7 @@ class EndFrameListenerTest {
     void happyFlow() {
         EndFrameListener l = new EndFrameListener() {
             @Override
-            protected boolean frameEnded(long time) {
+            public boolean frameEnded(long time) {
                 return false;
             }
         };

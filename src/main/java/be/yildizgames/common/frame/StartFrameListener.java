@@ -29,7 +29,7 @@ package be.yildizgames.common.frame;
  *
  * @author Grégory Van den Borre
  */
-public abstract class StartFrameListener extends FrameListener {
+public abstract class StartFrameListener extends BaseFrameListener {
 
     /**
      * Does nothing.
@@ -38,7 +38,7 @@ public abstract class StartFrameListener extends FrameListener {
      * @return Always <code>true</code>.
      */
     @Override
-    protected final boolean frameEnded(final long time) {
+    public final boolean frameEnded(final long time) {
         return true;
     }
 

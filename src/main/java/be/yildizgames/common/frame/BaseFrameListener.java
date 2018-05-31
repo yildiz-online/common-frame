@@ -24,21 +24,38 @@
 
 package be.yildizgames.common.frame;
 
+import be.yildizgames.common.time.Timer;
+
 /**
- * The listener will be notified when the frame finishes and will provide the
+ * Listen when a frame starts and finishes, the frame end method provide the
  * time since the last frame.
  *
  * @author Grégory Van den Borre
  */
-public abstract class EndFrameListener extends BaseFrameListener {
+public abstract class BaseFrameListener implements FrameListener {
 
     /**
-     * Does nothing.
+     * Time to compute the time since last call.
+     */
+    private final Timer timer;
+
+    /**
+     * Simple constructor.
+     */
+    public BaseFrameListener() {
+        super();
+        this.timer = new Timer();
+    }
+
+    /**
+     * Called when a frame ends.
      *
-     * @return Always <code>true</code>.
+     * @return <code>false</code> if the listener has finished his job and must
+     * be removed from the notify list.
      */
     @Override
-    public final boolean frameStarted() {
-        return true;
+    public final boolean frameEnded() {
+        return this.frameEnded(this.timer.getActionTime());
     }
+
 }
