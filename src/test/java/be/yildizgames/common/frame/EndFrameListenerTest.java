@@ -32,10 +32,10 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 /**
  * @author Grégory Van den Borre
  */
-class EndFrameListenerTest {
+public class EndFrameListenerTest {
 
     @Test
-    void happyFlow() {
+    public void happyFlow() {
         EndFrameListener l = new EndFrameListener() {
             @Override
             public boolean frameEnded(long time) {

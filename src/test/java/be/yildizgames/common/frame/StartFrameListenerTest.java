@@ -32,10 +32,10 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 /**
  * @author Grégory Van den Borre
  */
-class StartFrameListenerTest {
+public class StartFrameListenerTest {
 
     @Test
-    void happyFlow() {
+    public void happyFlow() {
         StartFrameListener l = new StartFrameListener() {
             @Override
             public boolean frameStarted() {
