@@ -28,3 +28,4 @@
  * @author Van den Borre Grégory
  */
 package be.yildizgames.common.frame;
+
