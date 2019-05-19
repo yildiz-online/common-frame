@@ -41,5 +41,4 @@ public abstract class StartFrameListener extends BaseFrameListener {
     public final boolean frameEnded(final long time) {
         return true;
     }
-
 }

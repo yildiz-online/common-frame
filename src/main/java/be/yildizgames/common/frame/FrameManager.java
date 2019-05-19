@@ -31,4 +31,5 @@ package be.yildizgames.common.frame;
 public interface FrameManager {
 
     void addFrameListener(FrameListener listener);
+
 }

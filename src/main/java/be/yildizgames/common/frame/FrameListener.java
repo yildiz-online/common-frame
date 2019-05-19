@@ -47,4 +47,5 @@ public interface FrameListener {
     boolean frameEnded(long time);
 
     boolean frameEnded();
+
 }

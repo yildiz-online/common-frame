@@ -41,4 +41,5 @@ public abstract class EndFrameListener extends BaseFrameListener {
     public final boolean frameStarted() {
         return true;
     }
+
 }

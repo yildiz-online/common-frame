@@ -57,5 +57,4 @@ public abstract class BaseFrameListener implements FrameListener {
     public final boolean frameEnded() {
         return this.frameEnded(this.timer.getActionTime());
     }
-
 }

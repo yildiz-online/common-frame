@@ -44,4 +44,5 @@ public class StartFrameListenerTest {
         };
         assertTrue(l.frameEnded(0));
     }
+
 }
