@@ -25,6 +25,7 @@
 package be.yildizgames.common.frame;
 
 /**
+ * A FrameListener is a listener fired in every frame, it will be invoked at the start, and at the end.
  * @author Grégory Van den Borre
  */
 public interface FrameListener {
@@ -40,12 +41,18 @@ public interface FrameListener {
     /**
      * Called when a frame ends.
      *
-     * @param time Time since the begin of this frame.
+     * @param time Time since the begin of this frame, must be positive.
      * @return <code>false</code> if the listener has finished his job and must
      * be removed from the notify list.
      */
     boolean frameEnded(long time);
 
+    /**
+     * Called when a frame ends, if you need the time used in this frame, use frameEnded(long time) instead.
+     *
+     * @return <code>false</code> if the listener has finished his job and must
+     * be removed from the notify list.
+     */
     boolean frameEnded();
 
 }

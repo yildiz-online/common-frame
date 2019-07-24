@@ -23,9 +23,10 @@
  */
 
 /**
- * Contains the frame listeners classes/
+ * This package contains all the classes necessary to handle properly frame.
+ * It contains classed for frame listeners, as well as a frame manager.
  *
- * @author Van den Borre Grégory
+ * @author Grégory Van den Borre
  */
 package be.yildizgames.common.frame;
 

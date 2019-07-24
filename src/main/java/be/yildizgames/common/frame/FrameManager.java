@@ -25,6 +25,9 @@
 package be.yildizgames.common.frame;
 
 /**
+ * The manager is able to add and invoke the frame listeners.
+ * It can be any engine updated every frame.
+ *
  * @author Grégory Van den Borre
  */
 @FunctionalInterface
