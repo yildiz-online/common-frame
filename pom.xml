@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
 <!--
   ~ This file is part of the Yildiz-Engine project, licenced under the MIT License  (MIT)
   ~
@@ -22,32 +24,42 @@
   ~
   -->
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
   <modelVersion>4.0.0</modelVersion>
-  <name>Yildiz Common Frame</name>
+
+  <name>Yildiz-Engine Common Frame</name>
   <description>Common frame library for the yildiz project, contains utilities to handle frames.</description>
-  <url>https://bitbucket.org/yildiz-engine-team/common-frame</url>
+  <inceptionYear>2011</inceptionYear>
+  <url>https://engine.yildiz-games.be</url>
 
   <artifactId>common-frame</artifactId>
-  <version>1.0.4</version>
+  <version>1.0.5-SNAPSHOT</version>
 
-  <packaging>jar</packaging>
-  <inceptionYear>2011</inceptionYear>
-  <scm>
-    <connection>scm:git:https://bitbucket.org/yildiz-engine-team/common-frame</connection>
-    <developerConnection>scm:git:https://bitbucket.org/yildiz-engine-team/common-frame</developerConnection>
-    <url>https://bitbucket.org/yildiz-engine-team/common-frame</url>
-  </scm>
   <parent>
     <groupId>be.yildiz-games</groupId>
     <artifactId>parent</artifactId>
-    <version>3.0.5</version>
+    <version>3.0.9</version>
   </parent>
+
+  <packaging>jar</packaging>
+
+  <properties>
+    <java.version>11</java.version>
+  </properties>
+
+  <scm>
+    <connection>scm:git:https://github.com/yildiz-online/common-frame</connection>
+    <developerConnection>scm:git:https://github.com/yildiz-online/common-frame</developerConnection>
+    <url>https://github.com/yildiz-online/common-frame</url>
+  </scm>
+
   <dependencies>
     <dependency>
       <groupId>be.yildiz-games</groupId>
       <artifactId>common-time</artifactId>
-      <version>1.0.4</version>
+      <version>1.0.6</version>
     </dependency>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
@@ -55,5 +67,4 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-
 </project>

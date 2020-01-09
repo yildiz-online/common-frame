@@ -25,11 +25,11 @@
 package be.yildizgames.common.frame;
 
 /**
- * The listener will be notified when the frame starts.
+ * The listener will be notified only when the frame starts.
  *
  * @author Grégory Van den Borre
  */
-public abstract class StartFrameListener extends BaseFrameListener {
+public abstract class StartFrameListener implements FrameListener {
 
     /**
      * Does nothing.
@@ -42,4 +42,13 @@ public abstract class StartFrameListener extends BaseFrameListener {
         return true;
     }
 
+    /**
+     * Does nothing.
+     *
+     * @return Always <code>true</code>.
+     */
+    @Override
+    public final boolean frameEnded() {
+        return true;
+    }
 }
