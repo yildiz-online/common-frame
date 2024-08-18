@@ -35,7 +35,7 @@
   <url>https://engine.yildiz-games.be</url>
 
   <artifactId>common-frame</artifactId>
-  <version>1.0.6</version>
+  <version>1.0.7</version>
 
   <parent>
     <groupId>be.yildiz-games</groupId>
@@ -55,7 +55,7 @@
     <dependency>
       <groupId>be.yildiz-games</groupId>
       <artifactId>common-time</artifactId>
-      <version>1.0.7</version>
+      <version>1.0.8</version>
     </dependency>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
